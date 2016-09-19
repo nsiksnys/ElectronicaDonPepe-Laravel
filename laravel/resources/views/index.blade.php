@@ -2,6 +2,7 @@
 @section('content')
 <div class="page-header">
 	<h2>Elija la accion a realizar</h2>
+	<b>	<a href="{!!URL::to('/producto/')!!}">Productos</a> </b><br>
 	<b> Ventas
 		<ul>
 			<li>

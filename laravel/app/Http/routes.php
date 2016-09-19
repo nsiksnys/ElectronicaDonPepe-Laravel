@@ -15,18 +15,17 @@
 Route::get('/','IndexController@index');
 Route::get('/index', 'IndexController@index');
 
-/*Route::get('/venta/alta', function () {
-    return view('ventaNueva');
-});
+//Productos
+Route::get('/producto', 'ProductoController@index');
+Route::get('/producto/', 'ProductoController@index');
+Route::get('/producto/index', 'ProductoController@index');
 
-Route::get('/venta/consulta', function () {
-    return view('ventaConsulta');
-});
+//Venta
+/*Route::get('/venta/alta', 'VentaController@Alta');
+Route::get('/venta/consulta', 'VentaController@Consulta');
+Route::get('/venta/consulta/detalle', 'VentaController@Detalle');
 
-Route::get('/venta/consulta/detalle', function () {
-    return view('ventaDetalle');
-});
-
+//Usuarios
 Route::get('/login', function () {
     return view('login');
 });
@@ -39,6 +38,7 @@ Route::get('/error', function () {
     return view('error');
 });
 
+//Admin
 Route::get('/admin', function () {
     return view('admin');
 });
